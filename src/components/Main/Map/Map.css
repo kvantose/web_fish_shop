@@ -1,0 +1,20 @@
+.container__img {
+    position: absolute;
+    margin-bottom: 0px;
+    z-index: -1;
+}
+
+.fish {
+    margin-left: 1350px;
+}
+
+
+.map__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 550px;
+    border-radius: 60px;
+    flex-direction: column;
+    margin-bottom: 550px;
+}

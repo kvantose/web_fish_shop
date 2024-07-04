@@ -1,0 +1,8 @@
+
+.btnUp {
+  display: none;
+  position: sticky;
+  bottom: 80px;
+  margin-left: 1700px;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,166 @@
+.fish__catalog {
+    width: 100%;
+}
+
+.fish__catalog__title {
+    background-image: url("../../static/background/backMask.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: center;
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+
+.fish__catalog__title__p {
+    margin: 50px 190px;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: Forum;
+}
+
+.fish__catalog__card__img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.fish__catalog__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 50px 140px;
+}
+
+
+
+.fish__catalog__card {
+    flex-wrap: wrap;
+    width: 380px;
+    height: 480px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-top: none;
+    padding: 15px;
+    font-family: Montserrat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fish__catalog__card__name {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.catalog__card {
+    border: 1px solid black;
+    border-radius: 35px;
+}
+
+
+.fish__catalog__card__characteristics {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: gray;
+    margin: 15px 0;
+    height: 160px;
+    overflow: auto;
+}
+
+.fish__catalog__card__description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+.dialog__input {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dialog__input__text {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.dialog__input__select {
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 45px;
+    font-family: Montserrat;
+    padding: 10px;
+}
+
+.dialog__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.dialog {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 50px;   
+}
+
+.dialog__input__button {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 45px;
+    border: none;
+    background-color: #CA3313;
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.dialog__input__button:hover {
+    background-color: #9D2911;
+}
+
+.dialog__input__button:active {
+    background-color: #A3A2A2;
+}
+
+.dialog__input__politic {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.dialog__wheel {
+    width: 686px;
+    height: 603px;
+    rotate: 45deg;
+    margin-top: -400px;
+    margin-right: -250px;
+}
+/* 
+.dialog__fish {
+    display: flex;
+    flex-direction: column;
+} */

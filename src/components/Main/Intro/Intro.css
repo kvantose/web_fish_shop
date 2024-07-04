@@ -1,0 +1,62 @@
+.intro {
+    background: url("../../static/background/background.png"); 
+    width: 100%;
+	height: 280vh;
+}
+    
+    
+.intro__container {
+    width: 900px;
+    padding: 200px 140px;
+}
+
+.intro__h1 {
+    font-family: "Forum", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+}
+
+.intro__p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 60px;
+}
+
+.intro__button {
+    width: 375px;
+    height: 77px;
+    background: #FFFFFF;
+    border-radius: 62px;
+    font-size: 24px;
+    line-height: 31px;
+    border: none;
+    cursor: pointer;
+    background-color: #CA3313;
+    color: black;
+}
+
+.intro__button:hover {
+    background-color: #9D2911;
+}
+
+.intro__button:active {
+    background-color: #A3A2A2;
+    transition: 0.1s;
+}
+.intro__h1, .intro_p, .intro_button {
+    margin: 0 0 60px 0;
+}
+
+.intro__p2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 800px;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 800px;
+    color: white;
+}

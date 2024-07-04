@@ -1,0 +1,58 @@
+.header_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #EDF4FA;
+    color: black;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tel_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tel p:first-child {
+    margin-left: 28px;
+}
+
+.tel_img:hover  {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px auto;
+    width: 1700px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}

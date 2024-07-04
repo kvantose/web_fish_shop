@@ -1,0 +1,73 @@
+.feedback__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.feedback_p {
+    font-size: 24px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 0 150px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 60px;
+}
+
+.card__header {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px 30px 10px 30px;
+}
+
+.card__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.card__name {
+    font-size: 36px;
+    font-family: Forum;
+}
+
+.card__position {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Montserrat;
+    color: #969696;
+}
+
+.card__rating {
+    padding: 10px 30px 30px 30px;
+}
+
+.card__review {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.card__date {
+    display: flex;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

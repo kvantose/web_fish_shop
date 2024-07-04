@@ -1,0 +1,26 @@
+.breadcrumb {
+    margin: 50px;
+}
+
+.img__wrapper {
+    position: absolute;
+    z-index: -1;
+    margin-bottom: 0px;
+}
+
+.img__crab {
+    float: right;
+    margin-left: 1100px;
+}
+
+.img__buble {
+    float: right;
+    margin-left: 1000px;
+    margin-top: 1600px;
+}
+
+.img__wheel {
+    float: right;
+    margin-left: 1100px;
+    margin-top: 2500px;
+}
