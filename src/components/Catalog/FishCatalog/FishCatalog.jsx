@@ -7,40 +7,18 @@ import Slide from "@mui/material/Slide";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import TextField from "@mui/material/TextField";
-import Select from "@mui/material/Select";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import { MenuItem } from "@mui/material";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import Box from "@mui/material/Box";
-
+import Select from "react-select";
 
 const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
-const MenuProps = {
-  PaperProps: {
-    style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
-    },
-  },
-};
-
 export default function FishCatalog() {
   const [open, setOpen] = useState(false);
-  const [fish, setFish] = useState([]);
+  const [fish, setFish] = useState("");
 
   const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setFish(
-      typeof value === "string" ? value.split(",") : value
-    );
+    setFish(event);
   };
 
   const handleClickOpen = () => {
@@ -146,39 +124,14 @@ export default function FishCatalog() {
                 label="E-mail"
                 variant="standard"
               />
-              <FormControl sx={{ width: 400 }}>
-                <InputLabel id="demo-multiple-chip-label">Каталог</InputLabel>
-                <Select
-                  labelId="demo-multiple-chip-label"
-                  id="demo-multiple-chip"
-                  multiple
-                  value={fish}
-                  onChange={handleChange}
-                  input={
-                    <OutlinedInput id="select-multiple-chip" label="Chip" />
-                  }
-                  renderValue={(selected) => (
-                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                      {selected.map((value) => (
-                        <Chip key={value} label={value} />
-                      ))}
-                    </Box>
-                  )}
-                  MenuProps={MenuProps}
-                >
-                  {/* <div className="dialog__fish__menu"> */}
-                  {fishCatalog.map((item) => (
-                    <MenuItem
-                      key={item}
-                      value={item}
-                      sx={{ display: "flex", flexDirection: "column" }}
-                    >
-                      {item}
-                    </MenuItem>
-                  ))}
-                  {/* </div> */}
-                </Select>
-              </FormControl>
+              <Select
+                isClearable
+                placeholder="Виды рыбы"
+                isMulti
+                value={fish}
+                onChange={(e) => handleChange(e)}
+                options={fishCatalog}
+              />
               <button className="dialog__input__button">Отправить</button>
               <p className="dialog__input__politic">
                 Нажимая кнопку “Отправить”, вы даете согласие на обработку
@@ -200,63 +153,51 @@ export default function FishCatalog() {
   );
 }
 
-
 const fishCatalog = [
-  "Слабосолёная Сельдь 100/150г ломтики",
-  "Слабосолёная Кета 120г ломтики",
-  "Слабосолёная Кета 200г филе-кусок",
-  "Слабосолёная Сельдь 250г филе",
-  "Слабосолёная Форель 150г филе-кусок",
-  "Слабосолёная Форель 100г ломтики",
+  {
+    label: "Слабосолёная",
+    options: [
+      {
+        value: "Сельдь 100/150г ломтики",
+        label: "Сельдь 100/150г ломтики",
+      },
+      {
+        value: "Кета 120г ломтики",
+        label: "Кета 120г ломтики",
+      },
+      {
+        value: "Кета 200г филе-кусок",
+        label: "Кета 200г филе-кусок",
+      },
+      {
+        value: "Сельдь 250г филе",
+        label: "Сельдь 250г филе",
+      },
+      {
+        value: "Форель 150г филе-кусок",
+        label: "Форель 150г филе-кусок",
+      },
+      {
+        value: "Форель 100г ломтики",
+        label: "Форель 100г ломтики",
+      }
+    ],
+  },
+  {
+    label: "Холодное копчение",
+    options: [
+      {
+        value: "Палтус 150г филе",
+        label: "Палтус 150г филе",
+      },
+      {
+        value: "Палтус 100г ломтики",
+        label: "Палтус 100г ломтики",
+      },
+      {
+        value: "Палтус 200г филе-кусок",
+        label: "Палтус 200г филе-кусок",
+      },
+    ],
+  }
 ];
-
-// const fishCatalog = [
-//   {
-//     id: 1,
-//     title: "Слабосолёная",
-//     value: [
-//       {
-//         id: 1.1,
-//         label: "Сельдь 100/150г ломтики",
-//       },
-//       {
-//         id: 1.2,
-//         label: "Кета 120г ломтики",
-//       },
-//       {
-//         id: 1.7,
-//         label: "Кета 200г филе-кусок",
-//       },
-//       {
-//         id: 1.4,
-//         label: "Сельдь 250г филе",
-//       },
-//       {
-//         id: 1.5,
-//         label: "Форель 150г филе-кусок",
-//       },
-//       {
-//         id: 1.6,
-//         label: "Форель 100г ломтики",
-//       },
-//     ],
-//   },
-//   {
-//     id: 2,
-//     title: "Холодное копчение",
-//     value: [
-//       {
-//         id: 2.1,
-//         label: "Горбуша",
-//       },
-//       {
-//         id: 2.2,
-//         label: "Карась",
-//       },
-//       {
-//         id: 2.3,
-//         label: "Рыба",
-//       },
-//     ],
-//   },
-// ];
