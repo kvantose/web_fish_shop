@@ -79,6 +79,28 @@
     line-height: 20px;
 }
 
+.button__catalog {
+    width: 100%;
+    height: 77px;
+    background: #FFFFFF;
+    border-radius: 62px;
+    font-size: 24px;
+    line-height: 31px;
+    border: none;
+    cursor: pointer;
+    background-color: #CA3313;
+    color: black;
+}
+
+.button__catalog:hover {
+    background-color: #9D2911;
+}
+
+.button__catalog:active {
+    background-color: #A3A2A2;
+    transition: 0.1s;
+}
+
 
 .dialog__input {
     display: flex;
@@ -88,21 +110,24 @@
     gap: 20px;
 }
 
+.dialog__input__tel {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid  #818181;
+    padding-bottom: 0;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+.dialog__input__tel:focus {
+    outline: none;
+}
+
 .dialog__input__text {
     width: 100%;
     display: flex;
     gap: 20px;
     flex-direction: row;
-}
-
-.dialog__input__select {
-    width: 100%;
-    height: 80px;
-    font-size: 18px;
-    font-weight: 300;
-    border-radius: 45px;
-    font-family: Montserrat;
-    padding: 10px;
 }
 
 .dialog__container {
@@ -159,8 +184,152 @@
     margin-top: -400px;
     margin-right: -250px;
 }
-/* 
-.dialog__fish {
-    display: flex;
-    flex-direction: column;
-} */
+
+
+@media screen and (max-width: 1200px) {
+
+    .fish__catalog__cards {
+        margin: 50px 100px;
+        gap: 30px;
+    }
+
+    .fish__catalog__card {
+        width: 270px;
+        height: 400px;
+        padding: 10px;
+    }
+
+    .fish__catalog__card__img {
+        height: 250px;
+    }
+
+    .fish__catalog__title {
+        height: 100px;
+    }
+
+    .fish__catalog__title__p {
+        font-size: 32px;
+        margin: 50px 100px;
+    }
+
+    .fish__catalog__card__name {
+        font-size: 18px;
+
+    }
+    
+    .fish__catalog__card__characteristics {
+        font-size: 14px;
+        height: 120px;
+    }
+
+    .fish__catalog__card__description {
+        font-size: 14px;
+    }
+
+    .button__catalog {
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .dialog__wheel {
+        width: 400px;
+        height: 350px;
+        rotate: 45deg;
+        margin-top: -300px;
+        margin-right: -200px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .fish__catalog__title__p {
+        font-size: 24px;
+        margin: 30px;
+    }
+
+    .fish__catalog__cards {
+        margin: 50px 10px;
+        gap: 30px;   
+    }
+
+    .fish__catalog__card {
+        width: 220px;
+        height: 330px;
+        padding: 10px;
+    }
+
+    .fish__catalog__card__img {
+        height: 200px;  
+    }
+
+    .fish__catalog__title {
+        height: 80px;
+    }
+
+    .fish__catalog__card__name {
+        font-size: 16px;
+    }
+    
+    .fish__catalog__card__characteristics { 
+        font-size: 12px;
+        height: 80px;
+    }   
+
+    .fish__catalog__card__description {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .button__catalog {
+        font-size: 16px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .fish__catalog__cards {
+        margin: 50px 10px;
+        gap: 10px;   
+    }
+
+    .fish__catalog__card {
+        width: 150px;
+        padding: 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .fish__catalog__card__img {
+        height: 150px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .catalog__card {
+        border-radius: 15px;
+    }
+
+    .fish__catalog__card__name {
+        font-size: 14px;
+    }
+
+    .fish__catalog__card__characteristics {
+        font-size: 10px;
+    }
+
+    .fish__catalog__card__description {
+        font-size: 10px;
+    }
+
+    .button__catalog {
+        font-size: 14px;
+    }
+
+    .dialog__wheel {
+        display: none;
+    }
+
+    .dialog__input__button {
+        font-size: 14px;
+        height: 60px;
+    }
+}

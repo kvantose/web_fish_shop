@@ -11,7 +11,7 @@ export default function Footer() {
           <p>ИП Иванов Иван Иванович</p>
         </div>
         <div className="center__footer">
-          <img src="../../static/logo.png" alt="logo" />
+          <img src="../../static/logo.png" alt="logo" className="logo"/>
         </div>
         <div className="right__footer">
           <a href="#">Каталог</a>

@@ -26,7 +26,6 @@ export default function Advantages() {
           </div>
         </div>
       </div>
-      <img src="../../static/tail.png" alt="tail" />
     </div>
   );
 }

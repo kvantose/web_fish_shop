@@ -3,14 +3,19 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
 import Slider from "react-slick";
 import catalog_data from "../catalog_data";
+import { useMediaQuery } from 'react-responsive';
+
 
 export default function SimpleSlider() {
+  const isDesktop = useMediaQuery({ query: '(max-width: 1000px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 700px)' });
+
   var settings = {
-    dots: true,
+    dots: isMobile ? false : true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: isMobile ? 1 : 3 && isDesktop ? 2 : 3,
+    slidesToScroll: isMobile ? 1 : 3 && isDesktop ? 2 : 3,
     className: "carousel",
     autoplay: true,
     autoplaySpeed: 2000,

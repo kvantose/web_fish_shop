@@ -1,8 +1,16 @@
 .feedback__img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.feedback__fish {
+    position: absolute;
+    left: 0;
+}
+
+.feedback__buble {
+    position: absolute;
+    right: 0;
 }
 
 
@@ -12,13 +20,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin-top: 300px;
 }
 
 .feedback {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    justify-content: center;
     margin: 0 150px;
 }
 
@@ -70,4 +79,102 @@
     font-weight: 300;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .feedback {
+        gap: 10px;
+    }
+    .feedback_p {
+        font-size: 18px;
+    }
+
+    .card__name {
+        font-size: 24px;
+    }
+
+    .card__position {
+        font-size: 14px;
+    }
+
+    .card__header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card__header {
+        padding: 20px 20px;
+    }
+
+    .card__rating {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .card__review, .card__date {
+        font-size: 14px;
+    }
+
+    .feedback__fish {
+        width: 300px;
+        height: 500px;
+    }
+
+    .feedback__buble {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .feedback {
+        flex-direction: column;
+        margin: 0 100px;
+    }
+
+    .card__header {
+        padding: 10px 10px;
+    }
+
+    .card {
+        border-radius: 40px;
+    }
+
+    .feedback_p {
+        font-size: 16px;
+    }
+
+    .card__name {
+        font-size: 18px;
+    }
+
+    .card__position {
+        font-size: 12px;
+    }
+
+    .card__review, .card__date {
+        font-size: 12px;
+    }
+
+    .card__rating {
+        padding: 0px 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .feedback {
+        margin: 0px;
+    }
+
+    .feedback__fish {
+        width: 100px;
+        height: 300px;
+    }
+
+    .feedback__buble {
+        width: 50px;
+        height: 50px;
+    }
 }

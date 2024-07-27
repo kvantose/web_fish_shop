@@ -9,7 +9,7 @@ export default function Home() {
             <img src="../../static/location.png" alt="location" />
             <p>Санкт-Петербург</p>
           </div>
-          <img src="../../static/logo.png" alt="logo" />
+          <img src="../../static/logo.png" alt="logo" className="logo"/>
           <div className="tel_container">
             <img src="../../static/tel.png" alt="tel" className="tel_img" />
             <div className="tel">
@@ -26,12 +26,9 @@ export default function Home() {
         <li><a href="#">Форель</a></li>
         <li><a href="#">Кета</a></li>
         <li><a href="#">Клыкач</a></li>
-        <li><a href="#">Палтус</a></li>
         <li><a href="#">Горбуша</a></li>
-        <li><a href="#">Кальмар</a></li>
         <li><a href="#">Треска</a></li>
         <li><a href="#">Зубатка</a></li>
-        <li><a href="#">Окунь</a></li>
         <li><a href="#">Пикша</a></li>
         <li><a href="#">еще..</a></li>
       </ul>

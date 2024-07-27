@@ -43,3 +43,19 @@
     font-weight: 300;
     margin-left: 200px;
 }
+
+@media screen and (max-width: 1000px) {
+    .footer, .footer__bottom {
+        font-size: 12px;
+    }
+
+    .footer__bottom {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer, .footer__bottom {
+        font-size: 10px;
+    }
+}

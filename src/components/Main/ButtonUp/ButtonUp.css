@@ -1,8 +1,25 @@
-
-.btnUp {
-  display: none;
-  position: sticky;
+.btnUp__container {
+  position: fixed;
   bottom: 80px;
-  margin-left: 1700px;
-  margin-bottom: 100px;
+  right: 80px;
+  display: none; 
+}
+
+.btnUp:active {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .btnUp {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btnUp__container {
+      right: 20px;
+  }
 }

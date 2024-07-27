@@ -17,13 +17,13 @@ export default function MainCatalog() {
       <hr />
       <div className="img__wrapper">
         <img src="../../static/background/crab.png" alt="crab" className="img__crab" />
-        <img src="../../static/background/buble.png" alt="bubble"  className="img__buble"/>
+        <img src="../../static/background/buble.png" alt="bubble"  className="img__bubble"/>
         <img src="../../static/background/ship-wheel.png" alt="wheel"  className="img__wheel"/>
       </div>
       <Breadcrumbs
         aria-label="breadcrumb"
         className="breadcrumb"
-        sx={{ margin: "50px 0 0 190px" }}
+        sx={{ margin: "50px 0 0 190px", "@media (max-width: 1200px)": { margin: "50px 0 0 90px" }, "@media (max-width: 800px)": { margin: "30px 0 0 40px" }}}
       >
         <Link
           underline="hover"

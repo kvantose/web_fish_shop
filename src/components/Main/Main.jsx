@@ -7,15 +7,15 @@ import Map from "./Map/Map.jsx";
 import MiniCatalog from "./MiniCatalog/MiniCatalog.jsx";
 
 export default function Main() {
-    return (
-        <div>
-            <Header />
-            <Intro />
-            <MiniCatalog />
-            <FeedBack />
-            <Map />
-            <ButtonUp />
-            <Footer />
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <Intro />
+      <MiniCatalog />
+      <FeedBack />
+      <Map />
+      <ButtonUp />
+      <Footer />
+    </div>
+  );
 }

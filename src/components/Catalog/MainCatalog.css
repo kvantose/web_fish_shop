@@ -3,24 +3,30 @@
 }
 
 .img__wrapper {
-    position: absolute;
-    z-index: -1;
-    margin-bottom: 0px;
+    position: relative;
+    width: 100%;
 }
 
 .img__crab {
-    float: right;
-    margin-left: 1100px;
-}
-
-.img__buble {
-    float: right;
-    margin-left: 1000px;
-    margin-top: 1600px;
+    position: absolute;
+    right: 0;
 }
 
 .img__wheel {
-    float: right;
-    margin-left: 1100px;
-    margin-top: 2500px;
+    position: absolute;
+    right: 0;
+    top: 1500px
+}
+
+.img__bubble {
+    position: absolute;
+    top: 2100px;
+    right: 10;
+}
+
+@media screen and (max-width: 1200px) {
+    .img__crab, .img__wheel, .img__bubble {
+        width: 150px;
+        height: 150px;
+    }
 }
